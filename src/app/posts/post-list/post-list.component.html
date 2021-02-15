@@ -3,7 +3,7 @@
     <ul class="list-group">
         <li class="list-group-item" 
             *ngFor="let post of posts">
-            {{ post.content }}
+            {{ post.content }}<button type="button" class="btn btn-secondary btn-sm float-right" (click)="onDelete(post.id)">X</button>
         </li>
     </ul>
 </div>
